@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context   http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc  http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+        ">
+        
+        
+		<security:http pattern="/**/*" security='none'>
+		</security:http>
+       
+        
+        <!--  <security:http pattern="/api/*.json" use-expressions="true" entry-point-ref="defaultAEP">
+     	  <security:custom-filter ref="digestFilter" after="BASIC_AUTH_FILTER" />
+     	<security:intercept-url pattern="/api/*.json" access="hasAnyRole('4,5,6,7,10')" />
+     </security:http>
+     <security:http pattern="/changePasscode.html" use-expressions="true" entry-point-ref="defaultAEP">
+     	 <security:custom-filter ref="digestFilter" after="BASIC_AUTH_FILTER" /> 
+     	<security:intercept-url pattern="/changePasscode.html" access="hasAnyRole('4,5,6,7,10')"/>
+     </security:http>  -->
+	
+	
+	
+	
+
+	<!-- <security:authentication-manager> <security:authentication-provider ref="jaasAuthenticationProvider" /> </security:authentication-manager> -->
+
+	
+</beans>

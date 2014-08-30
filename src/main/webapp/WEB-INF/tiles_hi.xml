@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="blank" template="/pages/template/layout.jsp">
+		<put-attribute name="title" value="layout" />
+		<put-attribute name="header" value="/pages/template/headerIcon.jsp" />
+		<put-attribute name="sidenav" value="/pages/template/navigator.jsp" />
+		<put-attribute name="body" value="/pages/template/page.jsp" />
+		<put-attribute name="notifRight" value="/pages/template/RightNav.jsp" />
+		<put-attribute name="footer" value="/pages/template/footer.jsp" />
+		<put-attribute name="footerIcon" value="/pages/template/footerIcon.jsp" />
+	</definition>
+
+	<definition name="status" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/status.jsp" />
+
+
+	</definition>
+
+	<definition name="callhandelling" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/callHandelingstatus.jsp" />
+
+	</definition>
+
+	<definition name="callrouting" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/callRoutingStatus.jsp" />
+
+	</definition>
+
+	<definition name="resourcesStatus" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/resourceStatus.jsp" />
+
+	</definition>
+
+	<definition name="calltakerStatus" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/calltakerStatus.jsp" />
+
+	</definition>
+
+	<definition name="dispatcherStatus" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/dispatcherStatus.jsp" />
+
+	</definition>
+
+
+	<definition name="chat" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/chat.jsp" />
+
+	</definition>
+
+	<definition name="task" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/task.jsp" />
+
+	</definition>
+	
+	<definition name="map" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/map.jsp" />
+
+	</definition>
+	
+	<definition name="analytics" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/analytics.jsp" />
+
+	</definition>
+	
+	<definition name="vehicleList" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/resourceListing.jsp" />
+	</definition>
+	
+	<definition name="CFSlog" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/CFSlog.jsp" />
+	</definition>
+
+	<definition name="UserStatus" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/userStatus.jsp" />
+	</definition>
+	<definition name="CFSDashBoard" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/CFSDashboard.jsp" />
+	</definition>
+ <definition name="agentutilization" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/agentUtilization.jsp" />
+	</definition>
+     <definition name="controleroom-utilization" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/controleRoomUtilization.jsp" />
+		</definition>
+	
+        <definition name="utilizationdashboard" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/utilizationDashboard.jsp" />
+	</definition>
+        <definition name="blankcallcount" extends="blank">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="body" value="/pages/blankCallCount.jsp" />
+	</definition>
+
+	<definition name="dashBoard" template="/pages/template/layout.jsp">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="header" value="/pages/template/headerIcon.jsp" />
+		<put-attribute name="project" value="पर्यवेक्षक" />
+		<put-attribute name="sidenav" value="/pages/template/navigator.jsp" />
+		<put-attribute name="body" value="/pages/dashBoard.jsp" />
+		<put-attribute name="notifRight" value="/pages/template/RightNav.jsp" />
+		<put-attribute name="footer" value="/pages/template/footer.jsp" />
+		<put-attribute name="footerIcon" value="/pages/template/footerIcon.jsp" />
+	</definition>
+	<definition name="login" template="/pages/template/layout.jsp">
+		<put-attribute name="title" value="रिमोट पर्यवेक्षक" />
+		<put-attribute name="header" value="/pages/login.jsp" />
+		<put-attribute name="project" value="पर्यवेक्षक" />
+		<put-attribute name="sidenav" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="notifRight" value="" />
+		<put-attribute name="footer" value="/pages/template/footer.jsp" />
+		<put-attribute name="footerIcon" value="/pages/template/footerIcon.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>
